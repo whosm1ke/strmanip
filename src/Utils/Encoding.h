@@ -6,6 +6,7 @@
 
 #include <string>
 #include <codecvt>
+#include <locale>
 
 class Encoding {
 public:

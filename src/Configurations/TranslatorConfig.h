@@ -8,7 +8,7 @@
 #include "Enums/Key.h"
 #include "Enums/Language.h"
 
-const std::string BASE_TRANS_CFG_PATH = std::filesystem::current_path().string() + "\\" + "trans.json";
+const std::string BASE_TRANS_CFG_PATH = Util::get_executable_path() + "\\" + "trans.json";
 
 class TranslatorConfig final : public I_Config {
 private:

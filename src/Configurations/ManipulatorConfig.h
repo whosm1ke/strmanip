@@ -8,7 +8,7 @@
 #include "Enums/Key.h"
 #include "Enums/Language.h"
 
-const std::string BASE_MANIP_CFG_PATH = std::filesystem::current_path().string() + "\\" + "manip.json";
+const std::string BASE_MANIP_CFG_PATH = Util::get_executable_path() + "\\" + "manip.json";
 
 class ManipulatorConfig final : public I_Config {
     std::set<Key> capitalize_key_binding{};
